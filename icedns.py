@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import sys, ipaddress, socket
+import sys, socket
 
 """
 Author:   Edvin Dunaway
