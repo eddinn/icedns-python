@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 import sys, socket
 
-"""
-Author:   Edvin Dunaway
-Email:    edvin@eddinn.net
-Version:  0.1.2
-Licence:  MIT
-"""
+# Author:   Edvin Dunaway
+# Email:    edvin@eddinn.net
+# Version:  0.1.2
+# Licence:  MIT
 
 # Don't do anything, return Usage and exit if we are missing
 # the arg or args are more than one.
