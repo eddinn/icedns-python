@@ -23,5 +23,5 @@ try:
   if socket.gethostbyname(revip) == '127.1.0.1':
     print(ip, 'is an .is IP')
 # Else return False
-except Exception as ip:
-  print(ip, 'is not an .is IP')
+except Exception as e:
+  print(ip, 'is not an .is IP'.format(e))
