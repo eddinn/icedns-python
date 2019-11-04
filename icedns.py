@@ -24,4 +24,4 @@ try:
     print(ip, 'is an .is IP')
 # Else return False
 except Exception as e:
-  print(ip, 'is not an .is IP'.format(e))
+  print(ip, 'is not an .is IP -', format(e))
