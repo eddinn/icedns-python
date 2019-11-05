@@ -13,10 +13,14 @@ jobs:
       # Step 2: install dependencies
       - run:
           name: install dependencies
-          command: pip install flake8
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install flake8
       # Step 3: run linter and tests
       - run:
           name: run tests
           command: |
+            . venv/bin/activate
             flake8 --statistics
             if ! ./icedns.py 85.220.42.42; then; echo "Script returned error $?"; exit 1
