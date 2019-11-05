@@ -22,4 +22,5 @@ jobs:
           command: |
             . venv/bin/activate
             flake8 --exclude=venv* --statistics
-            if ! ./icedns.py 85.220.42.42; then; echo "Script returned error $?"; exit 1
+            ./icedns.py 85.220.42.42
+            if [ $? != 0 ]; then echo "IceDNS failed the lookup" exit 1
