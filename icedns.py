@@ -24,7 +24,7 @@ def lookup():
             exit(0)
     # Else return False
     except Exception as e:
-        print(ip, 'is not an .is IP -', format(e))
+        print(ip, 'not found at .iceland.rix.is ->', format(e))
         exit(1)
 
 
